@@ -7,38 +7,35 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
-.parent {
+.container {
   position: relative;
-  top: 0;
-  left: 0;
+  width: 50%;
 }
 
-image1 {
-  position: absolute;
-  max-width: 500px;
-  top: 0;
-  left: 0;
-  border: 1px solid #000000;
- z-index: 1;
- border: none;
-        cursor: pointer;
-        appearance: none;
-        background-color: inherit;
-         transition: transform 2s ease-in-out;
-        
-
-      }
-      image1:hover{
-        transform: scale(0.9, 0.9);
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
 }
 
-.image2 {
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
   position: absolute;
-  max-width: 500px;
-  top: 30px;
-  left: 30px;
-  border: 1px solid #000000;
- z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
 }
 
 </style>
@@ -46,12 +43,9 @@ image1 {
 
 <!-- !PAGE CONTENT! -->
  
-<div class="parent">
- 
-<a href="index.html">
-  <img class="image1" src="ayo.jpg" />
-</a>
-  <img class="image2" src="ayo bg.jpg" />
+<div class="container">
+  <img src="ayo bg.jpg" alt="psych">
+  <button class="btn">Button</button>
 </div>
 </body>
 </html>
