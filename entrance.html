@@ -9,11 +9,11 @@
 
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 /* Make the image responsive */
-.container img {
+.container .bgimg {
   width: 100%;
   height: auto;
 }
@@ -35,7 +35,7 @@
 }
 
 .container .btn:hover {
-  background-color: black;
+  background-color: white;
 }
 
 </style>
@@ -44,8 +44,10 @@
 <!-- !PAGE CONTENT! -->
  
 <div class="container">
-  <img src="ayo bg.jpg" alt="psych">
-  <button class="btn">Button</button>
+  <img class="bgimg" src="ayo bg.jpg" alt="psych">
+  <a href="index.html">
+    <img class="btn">
+  </a>
 </div>
 </body>
 </html>
