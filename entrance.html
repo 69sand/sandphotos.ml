@@ -4,12 +4,23 @@
 <meta charset="UTF-8">
 <style>
 body {
-  background-image: "ayo bg.jpg";
+{
+height: 100%;
+width:100%;
+margin:0;
+padding:0;
+background:url(ayo bg.jpg);
+background-position:50% 50%;
+background-repeat:no-repeat;
 }
 img {
   max-width: 500px;
   height: auto;
-  align: center; vertical-align: middle;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 }
   img:hover {
   opacity: 0.8;
